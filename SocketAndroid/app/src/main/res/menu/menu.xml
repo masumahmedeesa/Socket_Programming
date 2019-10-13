@@ -12,8 +12,15 @@
 
     <item
 
-        android:id="@+id/savedMessagesId"
-        android:title="Saved Messages"
+        android:id="@+id/saveMessagesId"
+        android:title="Save Messages"
+        app:showAsAction="never"
+        />
+
+    <item
+
+        android:id="@+id/showMessagesId"
+        android:title="Show Saved Messages"
         app:showAsAction="never"
         />
 

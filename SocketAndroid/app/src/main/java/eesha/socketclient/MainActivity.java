@@ -2,6 +2,7 @@ package eesha.socketclient;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -52,9 +53,12 @@ public class MainActivity extends AppCompatActivity {
     private Thread thread2;
     private boolean startTyping = false;
     private int time = 2;
+    private int count = 0;
 
     ArrayList<String> users = new ArrayList<String>();
+    ArrayList<String> fuck = new ArrayList<String>();
 
+    private DatabaseHelper databaseHelper;
 
     private Socket mSocket;
     {
@@ -70,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             super.handleMessage(msg);
             Log.i(TAG, "handleMessage: typing stopped " + startTyping);
             if(time == 0){
-                setTitle("SocketIO");
+                setTitle("Chat App");
                 Log.i(TAG, "handleMessage: typing stopped time is " + time);
                 startTyping = false;
                 time = 2;
@@ -93,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
         uniqueId = UUID.randomUUID().toString();
         Log.i(TAG, "onCreate: " + uniqueId);
 
-
+        databaseHelper = new DatabaseHelper(this);
+        SQLiteDatabase sqLiteDatabase = databaseHelper.getWritableDatabase();
 
         if(savedInstanceState != null){
             hasConnection = savedInstanceState.getBoolean("hasConnection");
@@ -151,7 +156,17 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ConnectedUsers.class);
             intent.putExtra("users",users);
             startActivity(intent);
-            return true;
+        }
+        else if(item.getItemId() == R.id.saveMessagesId){
+
+            Toast.makeText(MainActivity.this,"Message saved..",Toast.LENGTH_SHORT).show();
+        }
+        else if(item.getItemId() == R.id.showMessagesId){
+
+            Toast.makeText(MainActivity.this,"Going to saved messages...",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, MessageShow.class);
+            //intent.putExtra("message", fuck);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -211,6 +226,9 @@ public class MainActivity extends AppCompatActivity {
                         username = data.getString("username");
                         message = data.getString("message");
                         id = data.getString("uniqueId");
+
+                        databaseHelper.saveData(username,message);
+                        fuck.add(username+" : "+ message);
 
 //                        users.add(username);
 

@@ -11,12 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConnectedUsers"></activity>
+        <activity android:name=".MessageShow"></activity>
+        <activity android:name=".ConnectedUsers" />
         <activity
             android:name=".MainActivity"
-            android:banner="@android:color/tab_indicator_text">
-
-        </activity>
+            android:banner="@android:color/tab_indicator_text"></activity>
         <activity android:name=".AddUserActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

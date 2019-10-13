@@ -23,9 +23,9 @@ public class ConnectedUsers extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
 
         ArrayList<String> userss = bundle.getStringArrayList("users");
-        Log.i(TAG1, "onCreate: " + userss.size());
+        //Log.i(TAG1, "onCreate: " + userss.size());
 
-        ListView listView = findViewById(R.id.usersView);
+        //ListView listView = findViewById(R.id.usersView);
 
         ArrayAdapter<String> items = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,userss);
         listView.setAdapter(items);

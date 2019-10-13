@@ -19,12 +19,7 @@
     <ListView
         android:layout_width="match_parent"
         android:id="@+id/usersView"
-        android:layout_weight="2"
-        android:divider="#E91E63"
-        android:dividerHeight="2dp"
-        android:listSelector="#03A9F4"
-        android:transcriptMode="normal"
-        android:verticalScrollbarPosition="right"
+        android:dividerHeight="1dp"
         android:layout_height="wrap_content"
         />
 </LinearLayout>
