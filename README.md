@@ -49,15 +49,15 @@
    
    <br>
 2. In our Client Side Android application, there is a option named <b>Port Number</b> in where you have to give port number of our global server which is <b>5000</b>. There is also a <b>Name</b> option where you can give anonymous name. :) <br>
-
+<br><img src="Videos/gif_1.gif"/> <br>
 3. We have a beautiful GUI (ListView) to show exchanged messages, also have EditText to write text and a Send Button. <br>
 
 4. Each time Send is pressed with a new message in APK, all of the users connected to the server will immediately see the new message. <br>
 
 5. In GUI, there exists a menu item having <b>Connected Users</b>, <b>Save Exchanged Messages</b> and <b>Show Saved Messages</b> options. In <b>Connected Users</b>, you can see all the users who is connected or not. <br>
-
+<br><img src="Videos/gif_2.gif"/> <br>
 6. By clicking <b>Save Exchanged Messages</b>, you can save your Exchanged messages to Database. To see what you have saved, you can click <b>Show Saved Messages</b> to see all saved messages. <br>
-We have used <b>SQLite Database</b> for storing Data. For this, we have used <b>SQLiteHelper</b> method to implement database system.
+> We have used <b>SQLite Database</b> for storing Data. For this, we have used <b>SQLiteHelper</b> method to implement database system.
 
 <br> 
 
@@ -67,12 +67,15 @@ We have used <b>SQLite Database</b> for storing Data. For this, we have used <b>
 <li>
 In Message Activity, we can see <b>who is typing right now</b> and also <b>who is connected or disconnected</b> stuffs.
 </li>
+<li>
+   Stylish <b>Chat App</b> Android Application with Beautiful GUIs.
+</li>
    
 <br><br>
 Developed By : <br>
 <b>Masum Ahmed EeSha</b> | 2016331028 (Serving Global Host, Creating General Client System) <br>
-<b>Mushtaq Shahriar Rafee</b> | 20166331098 (Creates Menu items with options, Styling APK, Initializing Database)
+<b>Mushtaq Shahriar Rafee</b> | 2016331098 (Creates Menu items with options, Styling APK, Initializing Database)
 <br>
-Actually we both two collaborately create this APK.
+> Actually we both two collaborately create this APK.
 <br> <br>
 <h4> THANK YOU </h4>
