@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "212214803197",
+    "firebase_url": "https://socketclient-f167c.firebaseio.com",
+    "project_id": "socketclient-f167c",
+    "storage_bucket": "socketclient-f167c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212214803197:android:30b35a63639f24f3072c94",
+        "android_client_info": {
+          "package_name": "eesha.socketclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212214803197-qe6ur40o747a7fk6irnsdkl9n5pm6n40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eesha.socketclient",
+            "certificate_hash": "0f6dc39d49e5af1dc94a7b02d1d5ec12bd2ff9c3"
+          }
+        },
+        {
+          "client_id": "212214803197-g8kn4tdgdddh71j01vvg2s9bt3t7eb3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe5l_1cz1L83T19eG32Mmwu6qy3_LJvn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212214803197-g8kn4tdgdddh71j01vvg2s9bt3t7eb3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
