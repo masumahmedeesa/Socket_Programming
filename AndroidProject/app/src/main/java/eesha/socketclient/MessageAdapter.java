@@ -13,8 +13,6 @@ import java.util.List;
 
 public class MessageAdapter extends ArrayAdapter<MessageFormat> {
 
-
-
     public MessageAdapter(Context context, int resource, List<MessageFormat> objects) {
         super(context, resource, objects);
     }

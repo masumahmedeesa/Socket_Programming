@@ -35,10 +35,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         try{
 
             sqLiteDatabase.execSQL(CREATE_TABLE);
-            Toast.makeText(context, "onCreate is called : ", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "onCreate is called : ", Toast.LENGTH_LONG).show();
 
         } catch (Exception e) {
-            Toast.makeText(context, "Exception : ", Toast.LENGTH_LONG).show();
+//            Toast.makeText(context, "Exception : ", Toast.LENGTH_LONG).show();
         }
 
     }
@@ -52,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             onCreate(sqLiteDatabase);
 
         } catch (Exception e) {
-            Toast.makeText(context, "Exception : ", Toast.LENGTH_LONG).show();
+//            Toast.makeText(context, "Exception : ", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -71,5 +71,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM "+TABLE_NAME,null);
         return cursor;
+    }
+    public void deleteAll(){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.delete(TABLE_NAME,null,null);
+        sqLiteDatabase.close();
     }
 }

@@ -166,6 +166,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("username",Username);
             startActivity(intent);
         }
+        else if(item.getItemId() == R.id.deleteMessagesId){
+            databaseHelper.deleteAll();
+            Toast.makeText(MainActivity.this,"All Messages Deleted",Toast.LENGTH_SHORT).show();
+        }
 
         return super.onOptionsItemSelected(item);
     }

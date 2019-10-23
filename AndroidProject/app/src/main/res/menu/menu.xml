@@ -18,10 +18,14 @@
         />
 
     <item
-
         android:id="@+id/showMessagesId"
         android:title="Show Saved Messages"
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/deleteMessagesId"
+        android:title="Delete Messages"
+        app:showAsAction="never"
+        />
 </menu>
