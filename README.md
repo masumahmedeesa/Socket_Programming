@@ -73,7 +73,7 @@ In Message Activity, we can see <b>who is typing right now</b> and also <b>who i
    
 <br><br>
 Developed By : <br>
-<b>Masum Ahmed EeSha</b> | 2016331028 (Serving Global Host, Creating General Client System, Layout, Integrating API, Database Management) <br>
+<b>Masum Ahmed EeSha</b> | 2016331028 (Serving Global Host, Creating Skeleton of Frontend, Integrating API, Database Management) <br>
 <b>Mushtaq Shahriar Rafee</b> | 2016331098 (Creates Menu items with options, Styling APK)
 <br>
 <h4> THANK YOU </h4>
